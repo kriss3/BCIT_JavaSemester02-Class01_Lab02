@@ -1,6 +1,12 @@
 package pl.kriss3.homelab;
 import java.util.Calendar;
 
+/**
+ * Person class to model a Peron
+ * @author krzysztof szczurowski
+ * @since 2017-01-13
+ * @see https://github.com/kriss3/BCIT_JavaSemester02-Class01_Lab02.git
+ */
 public class Person 
 {
 	private String firstName;
@@ -16,6 +22,8 @@ public class Person
 		setYear(year);
 	}
 
+	
+	// Properties Getters and Setters for each private instance variable
 	public String getFirstName() 
 	{
 		return firstName;

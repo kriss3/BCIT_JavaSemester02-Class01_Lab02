@@ -1,5 +1,11 @@
 package pl.kriss3.homelab;
 
+/**
+ * Class Test as a runner class;
+ * @author krzysztof szczurowski
+ * @since 2017-01-13
+ * @see https://github.com/kriss3/BCIT_JavaSemester02-Class01_Lab02.git
+ */
 public class Test 
 {
 	public static final int PARAM_LENGTH_ALLOWED = 4;
@@ -22,8 +28,13 @@ public class Test
 		Person p1 = new Person(params[0], params[1], Integer.parseInt(params[2]));
 		p1.x = Double.parseDouble(params[3]);
 		
-		System.out.printf("First Name:\t%s\nLast Name:\t%s\nYear:\t%4d\nNumber:\t%.0f", 
-				p1.getFirstName(), p1.getLastName(), p1.getYear(), p1.x);
+		
+		String format = "%-15s %10s\n";
+		
+		System.out.format(format,"First Name:", p1.getFirstName());
+		System.out.format(format,"Last Name:", p1.getLastName());
+		System.out.format(format,"Year:", p1.getYear());
+		System.out.format(format,"Number:", p1.x);
 		
 		System.out.println("\nFinished !");
 	}
