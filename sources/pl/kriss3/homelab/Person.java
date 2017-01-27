@@ -7,7 +7,7 @@ import java.util.Calendar;
  * @since 2017-01-13
  * @see https://github.com/kriss3/BCIT_JavaSemester02-Class01_Lab02.git
  */
-public class Person 
+public class Person
 {
 	private String firstName;
 	private String lastName;
